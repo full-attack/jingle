@@ -18,7 +18,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: kPrimaryColor,
-        child: Icon(
+        child: const Icon(
           Icons.person_add_alt_1,
           color: Colors.white,
         ),
@@ -36,10 +36,9 @@ class _ChatsScreenState extends State<ChatsScreen> {
           _selectedIndex = value;
         });
       },
-      items: [
+      items: const [
         BottomNavigationBarItem(icon: Icon(Icons.people), label: "Friends"),
         BottomNavigationBarItem(icon: Icon(Icons.messenger), label: "Chats"),
-        //BottomNavigationBarItem(icon: Icon(Icons.call), label: "Calls"),
         BottomNavigationBarItem(
           icon: CircleAvatar(
             radius: 14,
