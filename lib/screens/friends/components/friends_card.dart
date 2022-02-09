@@ -1,7 +1,7 @@
 import 'package:jingle/components/circle_avatar_with_active_indicator.dart';
 import 'package:flutter/material.dart';
 
-import 'package:jingle/constants.dart';
+import '../../../constants.dart';
 
 class ContactCard extends StatelessWidget {
   const ContactCard({
