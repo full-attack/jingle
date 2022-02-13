@@ -62,9 +62,9 @@ List chatsData = [
     isActive: true,
   ),
   Chat(
-    name: "Якупов Ильшат",
+    name: "Мария",
     lastMessage: "Где код?!!!!!!!",
-    image: "assets/images/user_3.png",
+    image: "assets/images/icon_9.png",
     time: "5d ago",
     isActive: false,
   ),

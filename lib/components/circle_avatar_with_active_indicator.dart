@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import 'package:jingle/constants.dart';
 
 class CircleAvatarWithActiveIndicator extends StatelessWidget {
   const CircleAvatarWithActiveIndicator({

@@ -1,4 +1,4 @@
-import 'package:jingle/models/chat_messange.dart';
+import 'package:jingle/models/chat_message.dart';
 import 'package:flutter/material.dart';
 
 import 'package:jingle/constants.dart';

@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:jingle/screens/messages/components/body.dart';
 import '../../constants.dart';
-//import 'package:jingle/models/chat_messange.dart'
-
+import 'package:jingle/models/chat_message.dart';
 class MessagesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -28,7 +27,7 @@ class MessagesScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Якупов Ильшат",
+                "Фамилия Имя",
                 style: TextStyle(fontSize: 16),
               ),
               Text(

@@ -1,7 +1,8 @@
 import 'package:jingle/components/primary_button.dart';
 import 'package:jingle/constants.dart';
-import 'package:jingle/screens/chats/chat_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../main/main_screen.dart';
 
 class SigninOrSignupScreen extends StatelessWidget {
   @override
@@ -13,19 +14,20 @@ class SigninOrSignupScreen extends StatelessWidget {
           child: Column(
             children: [
               Spacer(flex: 2),
-              Image.asset(
-                MediaQuery.of(context).platformBrightness == Brightness.light
-                    ? "assets/images/Logo.png"
-                    : "assets/images/Logo.png",
-                height: 146,
-              ),
+              Image.asset("assets/images/new_logo.jpg"),
+              // Image.asset(
+              //   MediaQuery.of(context).platformBrightness == Brightness.light
+              //       ? "assets/images/group_24.png"
+              //       : "assets/images/group_24.png",
+              //   height: 146,
+              // ),
               Spacer(),
               PrimaryButton(
                 text: "Sign In",
                 press: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ChatsScreen(),
+                    builder: (context) => MainScreen(),
                   ),
                 ),
               ),

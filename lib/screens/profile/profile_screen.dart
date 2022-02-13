@@ -1,5 +1,5 @@
-import 'package:chat/components/primary_button.dart';
-import 'package:chat/constants.dart';
+import 'package:jingle/components/primary_button.dart';
+import 'package:jingle/constants.dart';
 import 'package:flutter/material.dart';
 
 import 'components/info.dart';
@@ -22,27 +22,27 @@ class ProfileScreen extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: defaultPadding),
         child: Column(
           children: [
-            ProfilePic(image: "assets/images/user_2.png"),
+            ProfilePic(image: "assets/images/icon_9.png"),
             Text(
-              "Annette Black",
+              "Якупов Ильшат",
               style: Theme.of(context).textTheme.headline6,
             ),
             Divider(height: defaultPadding * 2),
             Info(
               infoKey: "User ID",
-              info: "@annette.me",
+              info: "@easyil",
             ),
             Info(
               infoKey: "Location",
-              info: "New York, NYC",
+              info: "Moscow, Russia",
             ),
             Info(
               infoKey: "Phone",
-              info: "(239) 555-0108",
+              info: "(917) 364-45-95",
             ),
             Info(
               infoKey: "Email Address",
-              info: "demo@mail.com",
+              info: "yakupov_il96@mail.ru@mail.ru",
             ),
             SizedBox(height: defaultPadding),
             Align(

@@ -12,10 +12,10 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           children: [
             Spacer(flex: 2),
-            Image.asset("assets/images/welcome_image.png"),
+            Image.asset("assets/images/Group_24.png"),
             Spacer(flex: 3),
             Text(
-              "Добро пожаловать в \nJingle pectus ",
+              "Jingle Pectus ",
               textAlign: TextAlign.center,
               style: Theme.of(context)
                   .textTheme
@@ -24,7 +24,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
             Spacer(),
             Text(
-              "Мессенджер созданный для общения по новым правилам \n",
+              "Мессенджер созданный для общения\n по новым правилам \n",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Theme.of(context)

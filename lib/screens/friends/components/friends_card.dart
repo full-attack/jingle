@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
 
-class ContactCard extends StatelessWidget {
-  const ContactCard({
+class FriendCard extends StatelessWidget {
+  const FriendCard({
     Key? key,
     required this.name,
     required this.number,
@@ -20,7 +20,7 @@ class ContactCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      contentPadding: EdgeInsets.symmetric(
+      contentPadding: const EdgeInsets.symmetric(
           horizontal: defaultPadding, vertical: defaultPadding / 2),
       onTap: () {},
       leading: CircleAvatarWithActiveIndicator(
