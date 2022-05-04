@@ -1,8 +1,14 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:jingle/screens/main/main_screen.dart';
+import 'package:jingle/screens/signUp/signup_screen.dart';
 import 'package:jingle/screens/welcome/welcome_screen.dart';
 import 'package:jingle/theme.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized(); //Ват ис ит потом понять
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -17,5 +23,37 @@ class MyApp extends StatelessWidget {
       darkTheme: darkThemeData(context),
       home: WelcomeScreen(),
     );
+  }
+}
+class InitializerWidget extends StatefulWidget {
+  @override
+  _InitializerWidgetState createState() => _InitializerWidgetState();
+}
+
+class _InitializerWidgetState extends State<InitializerWidget> {
+
+  late FirebaseAuth _auth;
+
+  late User _user;
+
+  bool isLoading = true;
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _auth = FirebaseAuth.instance;
+    _user = _auth.currentUser!;
+    isLoading = false;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return isLoading ? Scaffold(
+      body: Center(
+        child: CircularProgressIndicator(),
+      ),
+    ) : _user == null ? SigninOrSignupScreen() : MainScreen();
   }
 }

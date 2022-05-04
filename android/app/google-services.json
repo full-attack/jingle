@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200719630810",
+    "project_id": "fir-auth-fe3e0",
+    "storage_bucket": "fir-auth-fe3e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200719630810:android:5cdd4536b4f238e06440e3",
+        "android_client_info": {
+          "package_name": "com.example.jingle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200719630810-c7re1coltht537gt71mr13ojgj7r64ma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJQ8Y5ut0WPVw_tzkyXor-XJ6s50mBMQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200719630810-c7re1coltht537gt71mr13ojgj7r64ma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
